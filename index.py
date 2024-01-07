@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import google.generativeai as genai
 
-st.title("Gemini Bot")
+st.title("G-Robot🧑‍💻:")
 os.environ['GOOGLE_API_KEY'] = "AIzaSyB4XgWlQ6WOlMjcYnpw6uzFPgm9ug2qwM0"
 genai.configure(api_key = os.environ['GOOGLE_API_KEY'])
 
@@ -40,7 +40,7 @@ def llm_function(query):
         }
     )
 
-query = st.chat_input("What's up?")
+query = st.chat_input("Type here")
 
 if query:
     with st.chat_message("user"):
